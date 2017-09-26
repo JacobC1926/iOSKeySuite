@@ -1,0 +1,4 @@
+#!/bin/bash
+
+javac iOSDeviceQuery.java -d ../
+javac iOSKeyTool.java -d ../
