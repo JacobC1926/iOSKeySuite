@@ -1,2 +1,28 @@
 # iOSKeySuite
-Don't you hate having to look up your device build, codename and ID just to get decryption keys?
+Tired of manually looking up the decryption keys for your device? With this Java console application, you don't have to!
+
+With iOSKeySuite, you can:
+
+* Search all of the decryption keys for your device
+* Get some other information about your device
+* Query the build, codename and device ID, while only specifiying one of these
+* <i>and all of this without even connecting a USB</i>
+
+# Installation (Easy)
+
+<i> If you want to cd to the directory everytime to execute, choose this method </i>
+
+    sudo apt -y install openjdk-8-jre
+    git clone https://github.com/MaliciouZzHD/iOSKeySuite
+    cd iOSKeySuite
+
+# Installation (Advanced)
+
+<i> If you want to be able to type `ioskey---` from anywhere (aslong as you have root), choose this method </i>
+
+    sudo apt -y install openjdk-8-jre
+    git clone https://github.com/MaliciouZzHD/iOSKeySuite
+    cd iOSKeyTool
+    sudo ln -s $(pwd)/iOSKeyTool /sbin/ioskeytool
+	sudo ln -s $(pwd)/iOSDeviceQuery /sbin/iosdevicequery
+    cd
