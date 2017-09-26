@@ -29,3 +29,8 @@ With iOSKeySuite, you can:
     sudo ln -s $(pwd)/iOSKeyTool /sbin/ioskeytool
     sudo ln -s $(pwd)/iOSDeviceQuery /sbin/iosdevicequery
     cd
+
+# Todo
+* Add support for both codename and build query
+* Secure things up
+* Pretty things up (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
