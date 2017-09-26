@@ -14,7 +14,8 @@ With iOSKeySuite, you can:
 
     sudo apt -y install openjdk-8-jre
     git clone https://github.com/MaliciouZzHD/iOSKeySuite
-    cd iOSKeySuite
+    cd iOSKeySuite/src
+    bash Build.sh
 
 # Installation (Advanced)
 
@@ -22,7 +23,9 @@ With iOSKeySuite, you can:
 
     sudo apt -y install openjdk-8-jre
     git clone https://github.com/MaliciouZzHD/iOSKeySuite
-    cd iOSKeyTool
+    cd iOSKeyTool/src
+    bash Build.sh
+    cd ../
     sudo ln -s $(pwd)/iOSKeyTool /sbin/ioskeytool
-	sudo ln -s $(pwd)/iOSDeviceQuery /sbin/iosdevicequery
+    sudo ln -s $(pwd)/iOSDeviceQuery /sbin/iosdevicequery
     cd
