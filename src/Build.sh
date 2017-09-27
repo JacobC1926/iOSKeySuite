@@ -9,9 +9,9 @@ KEY2="\e[0m)"
 
 echo
 echo -e "${INFO}Checking for valid openJDK installation..."
-command -v javac
+command -v javac > /dev/null
 
-if [ [ ${?} != 0 ] ]; then
+if [[ ${?} != 0 ]]; then
 
 	echo
 	echo -e "${FAIL}There appears to be no valid installation of openJDK!!!"
@@ -25,29 +25,30 @@ echo -e "${SUCCESS}Valid openJDK installation found!!!"
 echo
 
 echo -en "${INFO}Compiling... ${KEY1} 1/2 ${KEY2}"
-javac iOSDeviceQuery.java -d ../
+javac iOSDeviceQuery.java -d ../ > /dev/null
 
-if [ [ ${?} != 0 ] ]; then
-
-	echo
-	echo -e "${FAIL}Failed to compile iOSDeviceQuery!!!"
-	echo
-	exit 1
-
-fi
-
-echo -en "\b\b\b\b\b2/2 ${KEY2}"
-
-javac iOSKeyTool.java -d ../
-
-if [ [ ${?} != 0 ] ]; then
+if [[ ${?} != 0 ]]; then
 
 	echo
-	echo -e "${FAIL}Failed to compile iOSKeyTool!!!"
+	echo -e "${FAIL}Failed to compile iOSDeviceQuery.java!!!"
 	echo
 	exit 1
 
 fi
 
-echo -e "${SUCCESS}Compilation successfull!!!"
+echo -en "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b${INFO}Compiling... ${KEY1} 2/2 ${KEY2}"
+
+javac iOSKeyQuery.java -d ../ > /dev/null
+
+if [[ ${?} != 0 ]]; then
+
+	echo
+	echo -e "${FAIL}Failed to compile iOSKeyQuery.java!!!"
+	echo
+	exit 1
+
+fi
+
+echo -e "\n${SUCCESS}Compilation successfull!!!"
+echo
 exit 0
