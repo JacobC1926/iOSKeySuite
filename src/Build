@@ -1,6 +1,0 @@
-#!/bin/bash
-
-echo "Compiling..."
-
-javac iOSDeviceQuery.java -d ../
-javac iOSKeyTool.java -d ../
