@@ -12,7 +12,6 @@ With iOSKeySuite, you can:
 
 <i> If you want to cd to the directory everytime to execute, choose this method </i>
 
-    ## Linux
     sudo apt -y install openjdk-8-jre
     git clone https://github.com/MaliciouZzHD/iOSKeySuite
     cd iOSKeySuite/src
