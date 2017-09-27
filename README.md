@@ -14,8 +14,8 @@ With iOSKeySuite, you can:
 
     sudo apt -y install openjdk-8-jre
     git clone https://github.com/MaliciouZzHD/iOSKeySuite
-    cd iOSKeySuite/srcuild.sh
-    chmod +x B
+    cd iOSKeySuite/src
+    chmod +x Build.sh
     bash Build.sh
     cd ../
 
