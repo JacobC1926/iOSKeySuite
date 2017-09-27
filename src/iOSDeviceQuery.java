@@ -16,6 +16,7 @@ public static void write ( String Message, int Time ) {
 
 				} catch ( Exception e ) {
 
+						//Do nothing
 						break;
 
 				}
