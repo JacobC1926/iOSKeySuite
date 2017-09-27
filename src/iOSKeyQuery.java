@@ -115,7 +115,7 @@ public static void main ( String[] args ) {
 		InnerURL = null;
 		write ( "\n", 15 );
 
-		System.out.println ( "--------------------------------------------------------------------------------" );
+		System.out.println ( "----------------------------------------------------------------------------------------------" );
 
 		while ( ( Line = BR.readLine (  ) ) != null) {
 
@@ -129,7 +129,7 @@ public static void main ( String[] args ) {
 
 		}
 
-		System.out.println ( "--------------------------------------------------------------------------------" );
+		System.out.println ( "----------------------------------------------------------------------------------------------" );
 
 	} catch ( MalformedURLException MURLE ) {
 
