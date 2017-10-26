@@ -82,7 +82,7 @@ public static void main ( String[] args ) {
 
 	try {
 
-		write ( "Sending query to server (1/2)", 15 );
+		write ( "\rSending query to server (1/2)", 15 );
 
 		URL URL = new URL("https://www.theiphonewiki.com/w/index.php?title=Special%3ASearch&profile=default&search=" + DeviceReplaced + "+" + Build + "&fulltext=Search");
 		IS = URL.openStream();
@@ -107,7 +107,7 @@ public static void main ( String[] args ) {
 
 		}
 
-		System.out.print ( "\b\b\b\b2/2)" );
+		System.out.print ( "Sending query to server (2/2)" );
 
 		URL = new URL("https://www.theiphonewiki.com/w/index.php?title=" + InnerURL + "_" + Build + "_(" + Device + ")&action=edit");
 		IS = URL.openStream();
