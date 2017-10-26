@@ -36,7 +36,7 @@ if [[ ${?} != 0 ]]; then
 
 fi
 
-echo -en "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b${INFO}Compiling... ${KEY1} 2/2 ${KEY2}"
+echo -en "\r${INFO}Compiling... ${KEY1} 2/2 ${KEY2}"
 
 javac iOSKeyQuery.java -d ../ > /dev/null
 
