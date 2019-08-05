@@ -13,7 +13,7 @@ With iOSKeySuite, you can:
 <i> If you want to cd to the directory everytime to execute, choose this method </i>
 
     sudo apt -y install openjdk-8-jre
-    git clone https://github.com/MaliciouZzHD/iOSKeySuite
+    git clone https://github.com/JacobC1926/iOSKeySuite
     cd iOSKeySuite/src
     chmod +x Build.sh
     bash Build.sh
@@ -24,7 +24,7 @@ With iOSKeySuite, you can:
 <i> If you want to be able to type `ioskey---` from anywhere (aslong as you have root), choose this method </i>
 
     sudo apt -y install openjdk-8-jre
-    git clone https://github.com/MaliciouZzHD/iOSKeySuite
+    git clone https://github.com/JacobC1926/iOSKeySuite
     cd iOSKeyTool/src
     chmod +x Build.sh
     bash Build.sh
